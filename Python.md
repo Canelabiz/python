@@ -98,6 +98,7 @@ To re-create the enviroment with the same packages and versions elsewhere:
 `pip install -r requirements.txt`
 
 Lastly, remember to exclude the virtual environment folder from source control by adding it to the ignore list (see Version Control Ignores).
+
 ---
 ## pip and virtualenv
 
