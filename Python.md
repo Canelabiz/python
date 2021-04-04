@@ -1,3 +1,5 @@
+
+
 # Python, virtual environments, VS Code, and Git
 
 ## Table of contents
@@ -5,9 +7,10 @@
 * [python](#python)
 * [pip](#pip)
 * [venv](#venv)
+* [pip and virtualenv](#pip_venv)
 * [Visual Studio Code](#vscode)
 * [Git](#Git)
-* [Footnotes & Linkies](#footnotes-&-linkies)
+* [Footnotes & Linkies](#footnotes_linkies)
 
 ---
 ## [python](https://www.python.org/)
@@ -101,6 +104,7 @@ Lastly, remember to exclude the virtual environment folder from source control b
 
 ---
 ## pip and virtualenv
+<h2 id=pip_venv>pip and virtualenv</h2>
 
 pip3 always operates on the Python3 environment only, as pip2 does with Python2. pip operates on whichever environment is appropriate to the context. For example if you are in a Python3 venv, pip will operate on the Python3 environment.
 
@@ -129,7 +133,7 @@ placeholder
 placeholder
 
 ---
-<h2 id="footnotes-&-linkies">Footnotes & Linkies</h3>
+<h2 id="footnotes_linkies">Footnotes & Linkies</h2>
 
 
 * [Python.org](https://www.python.org/)
