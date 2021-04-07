@@ -1,5 +1,3 @@
-
-
 # Python, virtual environments, VS Code, and Git
 
 ## Table of contents
@@ -7,104 +5,118 @@
 * [python](#python)
 * [pip](#pip)
 * [venv](#venv)
-* [pip and virtualenv](#pipvenv)
-* [Visual Studio Code](#vscode)
+* [pip and virtualenv](<#pip and virtualenv>)
+* [Visual Studio Code](<#Visual Studio Code>)
 * [Git](#Git)
-* [Footnotes & Linkies](#footnoteslinkies)
+* [Footnotes & Linkies](<#Footnotes & Linkies>)
 
 ---
+
 ## [python](https://www.python.org/)
 
-Python location<br>
+Python location  
 `where python`
 
-python version<br>
+python version  
 `python --version` or `python -V`
 
 ---
+
 ## [pip](https://pip.pypa.io/)
 
-#### pip version
+### pip version
+
 `pip --version` or `pip -V`
 
-####  pip location
+### pip location
+
 `where pip`
 
-#### Upgrade pip
+### Upgrade pip
+
 `python -m pip install -U pip` (short for)
 `python -m pip install --upgrade pip`
 
 ### [pip list](https://pip.pypa.io/en/stable/reference/pip_list/)
+
 `pip list`
 
 ### [pip install](https://pip.pypa.io/en/stable/reference/pip_install/)
+
 best practice: `python -m pip install requests`
 `pip install requests`
 
 ### [pip freeze](https://pip.pypa.io/en/stable/reference/pip_freeze/)
-create a requirements.txt file containing the names of your dependencies. You can use the pip command freeze for this task:
-`pip freeze > requirements.txt`
 
+Create a requirements.txt file containing the names of your dependencies. You can use the pip command freeze for this task:
+`pip freeze > requirements.txt`
 
 With pip, you can list all installed packages and their versions with `pip freeze`
 In most linux systems, you can pipe this to grep(or findstr on Windows) to find the row for the particular package you're interested in:
 
 Linux:
-```
+
+```bash
 $ pip freeze | grep lxml
 lxml==2.3
 ```
 
 Windows:
-```
+
+```cmd
 c:\> pip freeze | findstr lxml
 lxml==2.3
 ```
 
 ### [pip upgrade](https://link.com)
+
 `pip install Django -U` (short for) `pip install Django --upgrade`
 
 alternatively `python -m --upgrade Django`
 
-### [pip uninstall](https://pip.pypa.io/en/stable/reference/pip_uninstall/)<br>
+### [pip uninstall](https://pip.pypa.io/en/stable/reference/pip_uninstall/)
+
 `pip uninstall Django`
 
 batch uninstall:
 `pip uninstall -r uninstall.txt` or `python -m pip uninstall -r uninstall.txt -y`
 
 ---
+
 ## [venv](https://docs.python.org/3/library/venv.html)
-Create a virtual environment called `[venv]` in the current folder<br>
-`python -m venv venv`<br>
+
+Create a virtual environment called `[venv]` in the current folder  
+`python -m venv venv`
 
 This creates a copy of Python in whichever directory you ran the command in, placing it in a folder named venv.
 
-Activate the virtual environment
-(Win)<br>
-`venv\Scripts\activate` 
+Activate the virtual environment  
+(Win)  
+`venv\Scripts\activate`
 
-(Linux)<br>
+(Linux)  
 `source venv\bin\activate`
 
-Install packages with pip:
+Install packages with pip  
 `pip install requests`
 
-Deactivate virtual environment
+Deactivate virtual environment  
 `deactivate`
 
-To delete a virtual environment, just delete its folder. (In this case, it would be `rm -rf venv`.)
+To delete a virtual environment, just delete its folder.  
+(In this case, it would be `rm -rf venv`.)
 
-In order to keep your environment consistent, it’s a good idea to “freeze” the current state of the environment packages. To do this, run:
+In order to keep your environment consistent, it’s a good idea to “freeze” the current state of the environment packages.  
 `pip freeze > requirements.txt`
 
-To re-create the enviroment with the same packages and versions elsewhere:
+To re-create the enviroment with the same packages and versions elsewhere  
 `pip install -r requirements.txt`
 
 Lastly, remember to exclude the virtual environment folder from source control by adding it to the ignore list (see Version Control Ignores).
 
 ---
+
 ## pip and virtualenv
-<h2 id=pipvenv>pip and virtualenv</h2>
 
 pip3 always operates on the Python3 environment only, as pip2 does with Python2. pip operates on whichever environment is appropriate to the context. For example if you are in a Python3 venv, pip will operate on the Python3 environment.
 
@@ -116,8 +128,9 @@ Pip works as a module with -m, and so does venv for Python 3, so if you have Pyt
 
 `(venv35) [Prompt] pip install <whatever>`
 
-That will install `<whatever>` in the Python3.5 virtual environment venv35 in your current directory.<br>
+That will install `<whatever>` in the Python3.5 virtual environment venv35 in your current directory.  
 Another example:
+
 ```cmd
 python -m venv env
 source env/bin/activate
@@ -125,16 +138,20 @@ pip install -r requirements.txt
 ```
 
 ---
-[<h2 id="vscode">Visual Studio Code</h2>](https://code.visualstudio.com/)
+
+## [Visual Studio Code](https://code.visualstudio.com/)
+
 placeholder
 
 ---
+
 ## [Git](https://git-scm.com/)
+
 placeholder
 
 ---
-<h2 id="footnoteslinkies">Footnotes & Linkies</h2>
 
+## Footnotes & Linkies
 
 * [Python.org](https://www.python.org/)
 * [PyPA - The Python Packaging Authority](https://www.pypa.io/)
