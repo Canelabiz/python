@@ -52,7 +52,7 @@ Create a requirements.txt file containing the names of your dependencies. You ca
 `pip freeze > requirements.txt`
 
 With pip, you can list all installed packages and their versions with `pip freeze`
-In most linux systems, you can pipe this to grep(or findstr on Windows) to find the row for the particular package you're interested in:
+In most linux systems, you can pipe this to grep (or findstr on Windows) to find the row for the particular package you're interested in:
 
 Linux:
 
@@ -85,8 +85,8 @@ batch uninstall:
 
 ## [venv](https://docs.python.org/3/library/venv.html)
 
-Create a virtual environment called `[venv]` in the current folder  
-`python -m venv venv`
+Create a virtual environment called `[appenv]` in the current folder  
+`python -m venv appenv`
 
 This creates a copy of Python in whichever directory you ran the command in, placing it in a folder named venv.
 
@@ -112,7 +112,9 @@ In order to keep your environment consistent, it’s a good idea to “freeze”
 To re-create the enviroment with the same packages and versions elsewhere  
 `pip install -r requirements.txt`
 
-Lastly, remember to exclude the virtual environment folder from source control by adding it to the ignore list (see Version Control Ignores).
+Lastly, remember to exclude the virtual environment folder from source control by adding it to the ignore list (see Version Control Ignores).  
+.ignore file:  
+`\appenv`
 
 ---
 
