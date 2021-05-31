@@ -178,3 +178,4 @@ placeholder
 * [Creating the Perfect Python Dockerfile](https://luis-sena.medium.com/creating-the-perfect-python-dockerfile-51bdec41f1c8)
 * [GitHub - Production tools for Data Science](https://github.com/thuijskens/production-tools)
 * [Design Patterns in Python- The Catalog of Python Examples](https://refactoring.guru/design-patterns/python)
+* [Python SpeedSheet](https://speedsheet.io/s/python)
