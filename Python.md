@@ -8,6 +8,7 @@
 * [pip and virtualenv](<#pip and virtualenv>)
 * [Visual Studio Code](<#Visual Studio Code>)
 * [Git](#Git)
+* [Docker](#Docker)
 * [Footnotes & Linkies](<#Footnotes & Linkies>)
 
 ---
@@ -19,6 +20,9 @@ Python location
 
 python version  
 `python --version` or `python -V`
+
+python run module (pip):  
+`python -m pip`
 
 ---
 
@@ -37,16 +41,22 @@ python version
 `python -m pip install -U pip` (short for)
 `python -m pip install --upgrade pip`
 
-### [pip list](https://pip.pypa.io/en/stable/reference/pip_list/)
+### [pip list](https://pip.pypa.io/en/stable/cli/pip_list/)
 
 `pip list`
 
-### [pip install](https://pip.pypa.io/en/stable/reference/pip_install/)
+### [pip install](https://pip.pypa.io/en/stable/cli/pip_install/)
 
 best practice: `python -m pip install requests`
 `pip install requests`
 
-### [pip freeze](https://pip.pypa.io/en/stable/reference/pip_freeze/)
+### pip upgrade
+
+`pip install Django -U` (short for) `pip install Django --upgrade`
+
+alternatively `python -m --upgrade Django`
+
+### [pip freeze](https://pip.pypa.io/en/stable/cli/pip_freeze/)
 
 Create a requirements.txt file containing the names of your dependencies. You can use the pip command freeze for this task:
 `pip freeze > requirements.txt`
@@ -68,13 +78,7 @@ c:\> pip freeze | findstr lxml
 lxml==2.3
 ```
 
-### [pip upgrade](https://link.com)
-
-`pip install Django -U` (short for) `pip install Django --upgrade`
-
-alternatively `python -m --upgrade Django`
-
-### [pip uninstall](https://pip.pypa.io/en/stable/reference/pip_uninstall/)
+### [pip uninstall](https://pip.pypa.io/en/stable/cli/pip_uninstall/)
 
 `pip uninstall Django`
 
@@ -149,6 +153,14 @@ placeholder
 
 ## [Git](https://git-scm.com/)
 
+### Local Repository
+
+### Remote Repository
+
+---
+
+## [Docker](https://www.docker.com)
+
 placeholder
 
 ---
@@ -162,3 +174,7 @@ placeholder
 * [The Hitchhiker’s Guide to Python!](https://docs.python-guide.org/)
 * [Pipenv & Virtual Environments](https://docs.python-guide.org/dev/virtualenvs/)
 * [What is difference between pip and pip3? - Quora](https://www.quora.com/What-is-difference-between-pip-and-pip3)
+* [Better organization of your projects with python imports](https://pythonhowtoprogram.com/better-organization-of-your-projects-with-python-imports/)
+* [Creating the Perfect Python Dockerfile](https://luis-sena.medium.com/creating-the-perfect-python-dockerfile-51bdec41f1c8)
+* [GitHub - Production tools for Data Science](https://github.com/thuijskens/production-tools)
+* [Design Patterns in Python- The Catalog of Python Examples](https://refactoring.guru/design-patterns/python)
