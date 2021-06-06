@@ -237,7 +237,7 @@ Dragon is a specialization of Creature
 Indicated via class Type(BaseType) syntax
 
 ```python
-class Dragon(creatire):
+class Dragon(creature):
 
     def __init__(self, name, level, scale_thickness):
         super().__init__(name, level)
