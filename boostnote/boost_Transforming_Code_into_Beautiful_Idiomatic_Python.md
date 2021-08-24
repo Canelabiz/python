@@ -1,4 +1,4 @@
-# Transforming Code into Beautiful, Idiomatic Python
+# [Transforming Code into Beautiful, Idiomatic Python](https://youtu.be/OSGv2VnC0go)
 
 ### Looping over a range of numbers
 
@@ -54,7 +54,7 @@ for color in reversed(colors):
     print(color)
 ```
 
-### Looping over a collection and indicies
+### Looping over a collection and indices
 
 Ugly
 
@@ -77,3 +77,26 @@ dct = {i: colors[i] for i, color in enumerate(colors)}
 ```
 
 ### Looping over two collections
+
+```python
+names = ['raymond', 'rachel', 'matthew']
+colors = ['red', 'green', 'blue', 'yellow']
+```
+
+```python
+n = min(len(names), len(colors))
+for i in range(n):
+    print(names[i], '-->', colors[i])
+```
+
+pythonic
+
+```python
+for name, color in zip(n ames, colors):
+    print(f"{name} --> {color})
+```
+
+```python
+for name, color in izip(names, colors):
+print(f"{name} --> {color})
+```

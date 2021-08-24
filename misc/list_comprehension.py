@@ -1,23 +1,38 @@
 import timeit
 from string import ascii_lowercase
 
-###
+
 numbers = [1, 2, 3, 4, 5, 6]
 for n in numbers:
     print(n)
 
-[n for n in numbers]
+### create list from range(10)
+l_range = []
+for n in range(10):
+    l_range.append(n)
+
+# List comprehension
+l_range = [n for n in range(10)]
+
 ###
 
+# integer split into digits
+n = 123456
+[int(d) for d in str(n)]
 
-### Needs Verification
+# join array of split digits
+n = [1, 2, 3, 4, 5, 6]
+int("".join(str(d) for d in n))
+
+
+###
 fruits = ["Apple", "Banana", "Pear", "Orange"]
-for i, fruit in enumerate(fruits):
+
+for i, fruit in enumerate(fruits, 1):
     print(f"{i}. {fruit}")
 
-# does not work
-# [i, fruit for i, fruit in enumerate(fruits)]
 
+### Dict comprehension
 {
     i: fruit for i, fruit in enumerate(fruits)
 }  # -> {0: 'Apple', 1: 'Banana', 2: 'Pear', 3: 'Orange'}
@@ -25,7 +40,7 @@ for i, fruit in enumerate(fruits):
 
 
 # splitting a string into components
-def stringsplitting(string):
+def stringsplitting(string: str) -> list:
     return [character for character in string]
 
 

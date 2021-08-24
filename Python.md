@@ -179,3 +179,4 @@ placeholder
 * [GitHub - Production tools for Data Science](https://github.com/thuijskens/production-tools)
 * [Design Patterns in Python- The Catalog of Python Examples](https://refactoring.guru/design-patterns/python)
 * [Python SpeedSheet](https://speedsheet.io/s/python)
+* [Objects, Memory, and Mutation in Python](https://medium.com/@birnbera/objects-memory-and-mutation-in-python-810bf090b63c)
