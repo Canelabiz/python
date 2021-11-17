@@ -10,6 +10,7 @@ d_items = dict1.items()  # Put all key-value pairs in a list of tuples
 
 double_dict1 = {k: v * 2 for (k, v) in dict1.items()}
 print(double_dict1)
+{'a': 2, 'b': 4, 'c': 6, 'd': 8, 'e': 10}
 
 vowels = ["a", "e", "i", "o", "u"]
 
